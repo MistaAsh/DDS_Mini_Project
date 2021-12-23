@@ -7,6 +7,7 @@ Test stuck at zero fault at different locations on the I/O wires of the logic ga
 
 ## Project Report
 Requirements to run website: Web browser (such as Google Chrome or Mozilla Firefox)
+https://mistaash.github.io/DDS_Mini_Project/Project%20Report/index.html
 
 ## Members
 
