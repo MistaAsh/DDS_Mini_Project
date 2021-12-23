@@ -41,7 +41,6 @@
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pages/Theory.html" style="padding: 10px 20px;">Theory</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pages/Procedure.html" style="padding: 10px 20px;">Procedure</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pages/Results.html" style="padding: 10px 20px;">Results</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pages/Simulator.html" style="padding: 10px 20px;">Simulator</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pages/Team.html" style="padding: 10px 20px;">Team</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="https://github.com/MistaAsh/DDS_Mini_Project" target="_blank" style="padding: 10px 20px;">Github</a>
 </li></ul>
@@ -54,7 +53,6 @@
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pages/Theory.html" style="padding: 10px 20px;">Theory</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pages/Procedure.html" style="padding: 10px 20px;">Procedure</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pages/Results.html" style="padding: 10px 20px;">Results</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pages/Simulator.html" style="padding: 10px 20px;">Simulator</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pages/Team.html" style="padding: 10px 20px;">Team</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://github.com/MistaAsh/DDS_Mini_Project" target="_blank" style="padding: 10px 20px;">Github</a>
 </li></ul>
@@ -92,6 +90,10 @@
         </h3>
         <p class="u-text u-text-2"> Test stuck at zero fault at different locations on the I/O wires of the logic gates of a full subtractor using HDL simulator like Xilinx and note down the results obtained, timing diagrams and logic diagrams.</p>
       </div>
+	  <iframe class="embed-responsive-item" src="/embed/5139283132284928" frameborder="0"></iframe>        <div class="embed-responsive embed-responsive-4by3 video">
+          <iframe class="embed-responsive-item" src="/embed/5139283132284928" frameborder="0"></iframe> <!-- for everycircuit -->
+          <!-- <iframe class="embed-responsive-item" src="/embed/5084586430169088" frameborder="0"></iframe> --> <!-- for mmdevtwo -->
+        </div>
     </section>
     
     
