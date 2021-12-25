@@ -392,4 +392,16 @@
   .u-section-5 .u-image-1 {
     height: 279px;
   }
+}.u-section-6 .u-sheet-1 {
+  min-height: 500px;
+}
+
+.u-section-6 .u-text-1 {
+  margin: 71px auto 0;
+}
+
+.u-section-6 .u-image-1 {
+  height: 180px;
+  margin-top: 71px;
+  margin-bottom: 60px;
 }
