@@ -19,6 +19,35 @@
 		"@type": "Organization",
 		"name": "Site1"
 }</script>
+
+    <script language="javascript">  
+               function addRow(tableID) {  
+        var table = document.getElementById(tableID);  
+        var rowCount = table.rows.length;  
+        var row = table.insertRow(rowCount);  
+        //Column 1  
+        var cell1 = row.insertCell(0); 
+        cell1.innerHTML = rowCount;   
+        //Column 2    
+        var cell2 = row.insertCell(1);
+        //Column 3  
+        var cell3 = row.insertCell(2);  
+        // var element3 = document.createElement("input");  
+        // element3.type = "text";  
+        // cell3.appendChild(element3); 
+        //Column 4  
+        var cell4 = row.insertCell(3); 
+        //Column 5  
+        var cell5 = row.insertCell(4); 
+        //Column 6  
+        var cell6 = row.insertCell(5); 
+        //Column 7  
+        var cell7 = row.insertCell(6); 
+        //Column 8  
+        var cell8 = row.insertCell(7);  
+    }  
+    </script>
+
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Simulator">
     <meta property="og:description" content="">
@@ -65,6 +94,7 @@
           </div>
         </nav>
       </div></header> 
+      <h3 style="text-align: center;">Full-Subtractor Simulation</h3>
       <div class="simcir cec " style="width:800px; margin:0 auto;">
         {
           "width":800,
@@ -204,6 +234,22 @@
             {"from":"dev42.in0","to":"dev36.out0"}
           ]
         }
+        </div>
+
+        <div class="truth-table" style="width:800px; margin:0 auto;">
+          <input type="button" value="Run" onclick="addRow('dataTable')" />  
+          <table id="dataTable" width="700px" border="1">  
+               <tr>  
+                <td> </td>
+                <td>A</td>
+                <td>B</td>
+                <td>Bin</td>
+                <td>Expected D</td>
+                <td>Expected Bout</td>
+                <td>Actual D</td>
+                <td>Actual Bout</td>
+               </tr>  
+              </table>
         </div>
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8450"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
