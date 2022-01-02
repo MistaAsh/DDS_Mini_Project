@@ -69,35 +69,16 @@
     </section>
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-2f8f">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-1"> 1.&nbsp;Building the full subtractor model</h3>
-        <img class="u-image u-image-default u-image-1" src="../images/code1.jpeg" alt="" data-image-width="1004" data-image-height="367">
-        <p class="u-text u-text-2"> 1. First, we start with creating a .v file in the&nbsp;'Implementaton'&nbsp;section of the Xilinx software. In the course of this project, we named it 'full_subtractor.v'.&nbsp;This file will contain the module which builds the basic framework of the project. <br>
-          <br>2. We define the inputs using the&nbsp;'inputs'&nbsp;datatype and which are-&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A&nbsp;- The minuend<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B&nbsp;- The subtrahend<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bin&nbsp;- The borrow-in<br>
-          <br> 3. Next we define the outputs under the same module, which for a full-subtractor is-<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D&nbsp;- The Difference<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bout&nbsp;- The borrow-out<br>
-          <br> 4. Finally, after building the module signature, we top it off by initializing each output as a function of its inputs. In the case of a full-subtractor they are-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D = A^B^Bin<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bout = A'B + A'Bin + BBin
+        <h3 class="u-text u-text-1">Simulator</h3>
+        <p class="u-text u-text-2"> 1. First, we navigate to the simulator using the the navbar on the top of the screen <br>
+          <br>2. Upon opening the simulator, we see that the full-subtractor circuit built with XOR, OR, NOT and AND gates with default input given as <i>A=0, B=0 and Bin=0</i>.<br>
+          <br>3. The input values can be changed using by clicking on the circular blue button which toggles between 0 and 1 to simulate the high and low signals.<br>
+          <br>4. It can be observed that upon changing the input values the outputs, <i>D and Bout</i>, also change accordingly<br>
+          <br>5. Now, to implement the stuck-at 0 faults, specific buttons are placed on the input and output wires, enabled with <i>ON-OFF toggling</i>, where <i>ON</i> signifies stuck-at 0 fault existing on that particular wire.<br>
+          <br>6. After assigning inputs and enabling the required faults, we then click <i>'PRINT TABLE'</i> to append the inputs/outputs to the table and check if it differs from the expected output or not. 
         </p>
       </div>
     </section>
-    <section class="u-clearfix u-grey-5 u-section-3" id="sec-9f0a">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h3 class="u-text u-text-1"> 2. Creating testcases for simulations</h3>
-        <img class="u-image u-image-default u-image-1" src="../images/code2.jpeg" alt="" data-image-width="1280" data-image-height="721">
-        <p class="u-text u-text-2"> 1. To see the difference in the actual practical outputs (i.e. inputs which can be stuck-at 0) with the expected outputs, we create a set a inputs to represent the ideal case where no input can have a logical error and subsequently get the ideal, expected output for the same. The ideal inputs/outputs created for the subtractor are-<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _A&nbsp;- The ideal case Minuend (input)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _B&nbsp;- The ideal case Subtrahend(input)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _Bin- The ideal case borrow-in (input)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _D&nbsp;- The ideal case difference (output)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _Bout- the ideal case borrow-out (output)<br>
-          <br> 2. We also create a separate variable&nbsp;'flag'&nbsp;which is initialized to 0 representing that no faults have been detected yet. This flag is later assigned&nbsp;1&nbsp;if a fault is detected within the circuit.
-        </p>
-      </div>
-    </section>
-    <section class="u-clearfix u-grey-5 u-section-4" id="sec-b8de">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-1"> 3. Running the simulations</h3>
-        <p class="u-text u-text-2"> 1. For different values of inputs provided, we check the values obtained as output.<br>
-          <br> 2. The output values will be unique in case of some of the faults, using which we can identify where the stuck-at 0 fault is located.<br>
-          <br> 3. We check the values of the outputs in the given order and when a fault is found, we update the value of flag to 1, print the location of the fault and end module.<br>
-          <br>When A=1, B=1, Bin=1:&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * If D=0 &amp; Bout= 1, then A is stuck-at 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; * If D = 1 &amp; Bout = 0, then both B and Bin is stuck-at 0<br>When&nbsp; A = 1, B=1, Bin=0:&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* If D= 1 &amp; Bout= 0, then B is stuck-at 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* If D = 1 &amp; Bout = 1, then both A and Bin is stuck-at 0<br>When A= 1, B=0, Bin=0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* If D=1 &amp; Bout= 0, then Bin is stuck-at 0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* If D=1 &amp; Bout= 1, then both A and B is stuck-at 0<br>When A=1, B=0, Bin=0<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* If D=0 &amp; Bout= 0, then A,B and Bin is stuck-at 0
-        </p>
-      </div>
-    </section>
-    
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8450"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
   </body>

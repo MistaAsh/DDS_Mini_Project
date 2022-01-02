@@ -72,7 +72,7 @@
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-a077">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h3 class="u-text u-text-1">Full Subtractor</h3>
-        <p class="u-text u-text-2"> A full subtractor is a combinational circuit that performs subtraction involving three bits, namely A (minuend), B (subtrahend), and Bin (borrow-in) . It accepts three inputs: A (minuend), B (subtrahend) and a Bin (borrow bit) and it produces two outputs: D (difference) and Bout (borrow out). The logic diagram and truth table for a full subtractor is given below:</p>
+        <p class="u-text u-text-2"> D = A ^ B ^ Bin<br>Bout = A'B + A'Bin + BBin</p>
       </div>
     </section>
     <section class="u-clearfix u-grey-5 u-section-3" id="sec-0ac1">
@@ -123,12 +123,12 @@
               <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-white u-layout-cell-1" src="">
                 <div class="u-container-layout u-container-layout-1">
                   <h2 class="u-text u-text-1"> Design Procedure</h2>
-                  <p class="u-text u-text-2"> A full subtractor circuit is designed using NOT, AND and XOR gates. Stuck at zero faults in various locations in the input wire is checked. For different values of inputs, the values of outputs obtained for specific stuck-at 0 faults are unique, using which we can identify the location of the fault. If a stuck at zero fault is detected, the location is printed.</p>
+                  <p class="u-text u-text-2"> A full subtractor circuit is designed using NOT, AND and XOR gates. Stuck at zero faults in various locations in the input and output wires can be observed. For different values of inputs, the values of outputs obtained for specific stuck-at 0 faults can be different from the expected, ideal output, using which we can identify the presence of the fault.</p>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2" src="">
                 <div class="u-container-layout u-container-layout-2" src="">
-                  <img class="u-expanded-width u-image u-image-1" src="../images/Xillincircuit.PNG" data-image-width="319" data-image-height="263">
+                  <img class="u-expanded-width u-image u-image-1" src="../images/gates.PNG" data-image-width="123" data-image-height="100">
                 </div>
               </div>
             </div>
