@@ -124,8 +124,6 @@ function invert(input) {
 
 function calcuate(){
     //calculate fullsubtracor
-
-
     var _a, _b,_bin;
     _a = a;
     _b = b;
@@ -177,12 +175,14 @@ function calcuate(){
 function addResult() {
     let html = `
                      <tr>
-                        <td class="tg-nrix">${switches[0].dataset.value}</td>
-                        <td class="tg-nrix">${switches[1].dataset.value}</td>
-                        <td class="tg-nrix">${switches[2].dataset.value}</td>
-                        <td class="tg-nrix">${stuckAt == 0 ? 'N/A' : stuckAtButton[stuckAt - 1].innerHTML}</td>
-                        <td class="tg-nrix">${result[switches[0].dataset.value][switches[1].dataset.value][switches[2].dataset.value]}</td>
-                        <td class="tg-nrix">${output}</td>
+                        <td class="tg-nrix">${a}</td>
+                        <td class="tg-nrix">${b}</td>
+                        <td class="tg-nrix">${bin}</td>
+                        <td class="tg-nrix">${a^b^bin}</td>
+                        <td class="tg-nrix">${invert(a)*b + invert(a)*bin + b*bin}</td>
+                        <td class="tg-nrix">1</td>
+                        <td class="tg-nrix">1</td>
+                        <td class="tg-nrix">1</td>
                     </tr>
                     `
     document.getElementById('insert-here').innerHTML += html;
