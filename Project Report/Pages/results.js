@@ -1,4 +1,5 @@
 var a=0,b=0,bin=0,_dout=0,_bout=0;
+var s0=0,s1=0,s2=0,s3=0,s4=0;
 function change0() // no ';' here
 {
     var btn = document.getElementById("mybtn");
@@ -52,50 +53,65 @@ function fault0() {
     if (fa0.classList.contains("u-black")) {
         fa0.classList.remove("u-black");
         fa0.classList.add("u-palette-2-base");
+        s0 = 1;
     } else {
         fa0.classList.remove("u-palette-2-base");
         fa0.classList.add("u-black");
+        s0 = 0;
     }
+    calcuate()
 }
 function fault1() {
     var fa1 = document.getElementById("fa1");
     if (fa1.classList.contains("u-black")) {
         fa1.classList.remove("u-black");
         fa1.classList.add("u-palette-2-base");
+        s1 = 1;
     } else {
         fa1.classList.remove("u-palette-2-base");
         fa1.classList.add("u-black");
+        s1 = 0;
     }
+    calcuate()
 }
 function fault2() {
     var fa2 = document.getElementById("fa2");
     if (fa2.classList.contains("u-black")) {
         fa2.classList.remove("u-black");
         fa2.classList.add("u-palette-2-base");
+        s2 = 1;
     } else {
         fa2.classList.remove("u-palette-2-base");
         fa2.classList.add("u-black");
+        s2 = 0;
     }
+    calcuate()
 }
 function fault3() {
     var fa3 = document.getElementById("fa3");
     if (fa3.classList.contains("u-black")) {
         fa3.classList.remove("u-black");
         fa3.classList.add("u-palette-2-base");
+        s3 = 1;
     } else {
         fa3.classList.remove("u-palette-2-base");
         fa3.classList.add("u-black");
+        s3 = 0;
     }
+    calcuate()
 }
 function fault4() {
     var fa4 = document.getElementById("fa4");
     if (fa4.classList.contains("u-black")) {
         fa4.classList.remove("u-black");
         fa4.classList.add("u-palette-2-base");
+        s4 = 1;
     } else {
         fa4.classList.remove("u-palette-2-base");
         fa4.classList.add("u-black");
+        s4 = 0;
     }
+    calcuate()
 }
 //function that returns 1 is input is 0 and 0 if input is 1
 function invert(input) {
@@ -108,12 +124,37 @@ function invert(input) {
 
 function calcuate(){
     //calculate fullsubtracor
-    _dout = a^b^bin;
-    _bout = invert(a)*bin + invert(a)*b + b*bin;
-    //if _dout >1 then stuck at 1
+
+
+    var _a, _b,_bin;
+    _a = a;
+    _b = b;
+    _bin = bin;
+    if (s0 == 1) {
+        _a = 0;
+    }
+    if (s1 == 1) {
+        _b = 0;
+    }
+    if (s2 == 1) {
+        _bin = 0;
+    }
+
+    _dout = _a^_b^_bin;
+    _bout = invert(_a)*_bin + invert(_a)*_b + _b*_bin;
     if (_bout > 1) {
         _bout = 1;
     }
+
+
+    if (s3 == 1) {
+        _dout = 0;
+    }
+    if (s4 == 1) {
+        _bout = 0;
+    }
+
+    
     if (_dout == '1') {
         var dout = document.getElementById("dout");
         dout.src = "../images/3522738.png";     
