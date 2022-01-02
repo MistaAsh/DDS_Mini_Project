@@ -8,7 +8,9 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Results</title>
     <link rel="stylesheet" href="../nicepage.css" media="screen">
-<link rel="stylesheet" href="Results.css" media="screen">
+    <link rel="stylesheet" href="Results.css" media="screen">
+    <link rel="stylesheet" href="table.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
     <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="Results.js" defer=""></script>
@@ -66,9 +68,48 @@
         <button type="button" onclick="change()" id="mybtn" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-1">0</button>
         <button type="button" onclick="change1()" id="mybtn1"class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">0</button>
         <button type="button" onclick="change2()"id="mybtn2" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">0</button><span class="u-file-icon u-icon u-icon-1"><img src="../images/3522725.png" alt=""></span><span class="u-file-icon u-icon u-icon-2"><img src="../images/3522725.png" alt=""></span>
-        <button type="button" onclick="idk()" class="u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-4">Print Table</button>
-      </div>
+       </div>
     </section>
+
+    <div class="simulator-table container"
+            style="width: 900px; margin-bottom: 3rem; display: flex; flex-direction: column; justify-content: center; ">
+            <button onclick="addResult()" class="add-button"
+                style="padding: 0.5rem 1rem; background-color: #27d447; margin: auto;">
+                Add
+            </button>
+
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-b7zx" colspan="3">Input</th>
+                        <th class="tg-b7zy" colspan="2">Expected Output</th>
+                        <th class="tg-b7zz" colspan="2">Actual Output</th>
+                        <th class="tg-ogub" rowspan="2">Sa-0</th>
+                    </tr>
+                    <tr>
+                        <th class="tg-b7zx">A</th>
+                        <th class="tg-b7zx">B</th>
+                        <th class="tg-b7zx">Bin</th>
+                        <th class="tg-b7zy">D</th>
+                        <th class="tg-b7zy">Bout</th>
+                        <th class="tg-b7zz">D</th>
+                        <th class="tg-b7zz">Bout</th>
+                    </tr>
+                </thead>
+                <tbody id="insert-here">
+                    <tr>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8450"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>

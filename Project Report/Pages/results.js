@@ -31,3 +31,17 @@ function change2() // no ';' here
         btn.innerHTML = '0';        
     }
 }
+
+function addResult() {
+    let html = `
+                     <tr>
+                        <td class="tg-nrix">${switches[0].dataset.value}</td>
+                        <td class="tg-nrix">${switches[1].dataset.value}</td>
+                        <td class="tg-nrix">${switches[2].dataset.value}</td>
+                        <td class="tg-nrix">${stuckAt == 0 ? 'N/A' : stuckAtButton[stuckAt - 1].innerHTML}</td>
+                        <td class="tg-nrix">${result[switches[0].dataset.value][switches[1].dataset.value][switches[2].dataset.value]}</td>
+                        <td class="tg-nrix">${output}</td>
+                    </tr>
+                    `
+    document.getElementById('insert-here').innerHTML += html;
+}
