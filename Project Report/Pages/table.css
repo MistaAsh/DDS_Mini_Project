@@ -6,7 +6,7 @@
 .tg td {
   border-color: black;
   border-style: solid;
-  border-width: 1px;
+  /* border-width: 1px; */
   font-family: Arial, sans-serif;
   font-size: 14px;
   overflow: hidden;
@@ -17,7 +17,7 @@
 .tg th {
   border-color: black;
   border-style: solid;
-  border-width: 1px;
+  /* border-width: 1px; */
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
