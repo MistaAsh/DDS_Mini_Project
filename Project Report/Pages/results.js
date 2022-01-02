@@ -172,6 +172,15 @@ function calcuate(){
     }
 }
 
+function yesno() {
+    if(_dout==a^b^bin) {
+        if((invert(a)&b | invert(a)&bin | b&bin) == _bout) {
+            return "NO"
+        }
+    }    
+    return "YES"
+}
+
 function addResult() {
     let html = `
                      <tr>
@@ -179,10 +188,10 @@ function addResult() {
                         <td class="tg-nrix">${b}</td>
                         <td class="tg-nrix">${bin}</td>
                         <td class="tg-nrix">${a^b^bin}</td>
-                        <td class="tg-nrix">${invert(a)*b + invert(a)*bin + b*bin}</td>
-                        <td class="tg-nrix">1</td>
-                        <td class="tg-nrix">1</td>
-                        <td class="tg-nrix">1</td>
+                        <td class="tg-nrix">${invert(a)&b | invert(a)&bin | b&bin}</td>
+                        <td class="tg-nrix">${_dout}</td>
+                        <td class="tg-nrix">${_bout}</td>
+                        <td class="tg-nrix">${yesno()}</td>
                     </tr>
                     `
     document.getElementById('insert-here').innerHTML += html;
