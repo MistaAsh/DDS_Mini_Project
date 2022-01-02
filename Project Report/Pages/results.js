@@ -1,3 +1,4 @@
+var a=0,b=0,bin=0,_dout=0,_bout=0;
 function change0() // no ';' here
 {
     var btn = document.getElementById("mybtn");
@@ -5,17 +6,15 @@ function change0() // no ';' here
     // btn.innerHTML = '1';
     if (btn.innerHTML == '0') {
         btn.innerHTML = '1';
-        var dout = document.getElementById("dout");
-        dout.src = "../images/3522738.png";     
+        a=1; 
 
     } else {
         btn.innerHTML = '0';   
-        var dout = document.getElementById("dout");
-        dout.src = "../images/3522725.png";
+        a=0;
     }
     // change image src to the next image of id=dout
 
-
+    calcuate()
 }
 function change1() // no ';' here
 {
@@ -24,14 +23,13 @@ function change1() // no ';' here
     // btn.innerHTML = '1';
     if (btn.innerHTML == '0') {
         btn.innerHTML = '1';
-        var dout = document.getElementById("bout");
-        dout.src = "../images/3522738.png";     
+        b = 1;
 
     } else {
         btn.innerHTML = '0';   
-        var dout = document.getElementById("bout");
-        dout.src = "../images/3522725.png";
+        b = 0;
     }
+    calcuate()
 }
 function change2() // no ';' here
 {
@@ -40,9 +38,12 @@ function change2() // no ';' here
     // btn.innerHTML = '1';
     if (btn.innerHTML == '0') {
         btn.innerHTML = '1';
+        bin = 1;
     } else {
-        btn.innerHTML = '0';        
+        btn.innerHTML = '0';   
+        bin = 0;     
     }
+    calcuate()
 }
 
 //function to add u-black class to fa0, if u-black class is not present. else remove it and add u-red class to fa0
@@ -96,7 +97,41 @@ function fault4() {
         fa4.classList.add("u-black");
     }
 }
+//function that returns 1 is input is 0 and 0 if input is 1
+function invert(input) {
+    if (input == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
+function calcuate(){
+    //calculate fullsubtracor
+    _dout = a^b^bin;
+    _bout = invert(a)*bin + invert(a)*b + b*bin;
+    //if _dout >1 then stuck at 1
+    if (_bout > 1) {
+        _bout = 1;
+    }
+    if (_dout == '1') {
+        var dout = document.getElementById("dout");
+        dout.src = "../images/3522738.png";     
+
+    } else {
+        var dout = document.getElementById("dout");
+        dout.src = "../images/3522725.png";
+    }
+
+    if (_bout == '1') {
+        var bout = document.getElementById("bout");
+        bout.src = "../images/3522738.png";     
+
+    } else {
+        var bout = document.getElementById("bout");
+        bout.src = "../images/3522725.png";
+    }
+}
 
 function addResult() {
     let html = `
