@@ -8,10 +8,10 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Procedure</title>
     <link rel="stylesheet" href="../nicepage.css" media="screen">
-<link rel="stylesheet" href="Procedure.css" media="screen">
+<link rel="stylesheet" href="Pretest.css" media="screen">
     <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="Pretest.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Posttest.js".js" defer=""></script>
     <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     
@@ -25,7 +25,7 @@
 		"name": "Site1"
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Procedure">
+    <meta property="og:title" content="Posttest">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
@@ -44,7 +44,7 @@
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Theory.html" style="padding: 10px 20px;">Theory</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pretest.html" style="padding: 10px 20px;">Pretest</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Procedure.html" style="padding: 10px 20px;">Procedure</a>
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Simulator.html" style="padding: 10px 20px;">Simulation</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Simulator.html" style="padding: 10px 20px;">Simulator</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Posttest.html" style="padding: 10px 20px;">Posttest</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Team.html" style="padding: 10px 20px;">Team</a>
             </li></ul>
@@ -57,7 +57,7 @@
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Theory.html" style="padding: 10px 20px;">Theory</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pretest.html" style="padding: 10px 20px;">Pretest</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Procedure.html" style="padding: 10px 20px;">Procedure</a>
-            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Simulator.html" style="padding: 10px 20px;">Simulator</a>
+            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Simulator.html" style="padding: 10px 20px;">Simulation</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Posttest.html" style="padding: 10px 20px;">Posttest</a>
             </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Team.html" style="padding: 10px 20px;">Team</a>
             </li></ul>
@@ -69,22 +69,57 @@
       </div></header>
     <section class="u-align-center u-clearfix u-section-1" id="sec-fe7e">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h1 class="u-text u-text-default u-text-1"> PROCEDURE</h1>
+        <h1 class="u-text u-text-default u-text-1"> POSTTEST</h1>
       </div>
     </section>
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-2f8f">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-1">Simulator</h3>
-        <p class="u-text u-text-2"> 1. First, we navigate to the simulator using the the navbar on the top of the screen <br>
-          <br>2. Upon opening the simulator, we see that the full-subtractor circuit built with XOR, OR, NOT and AND gates with default input given as <i>A=0, B=0 and Bin=0</i>.<br>
-          <br>3. The input values can be changed using by clicking on the circular blue button which toggles between 0 and 1 to simulate the high and low signals.<br>
-          <br>4. It can be observed that upon changing the input values the outputs, <i>D and Bout</i>, also change accordingly<br>
-          <br>5. Now, to implement the stuck-at 0 faults, specific buttons are placed on the input and output wires, enabled with <i>ON-OFF toggling</i>, where <i>Red box</i> signifies stuck-at 0 fault existing on that particular wire.<br>
-          <br>6. After assigning inputs and enabling the required faults, we then click <i>'PRINT TABLE'</i> to append the inputs/outputs to the table and check if it differs from the expected output or not. 
-        </p>
+        <div id="container">
+
+            <section>
+              <form name="quizForm" >
+                <h3>1. Stuck-at fault is an example of _________ fault model</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> Transient<br>
+                <input type="radio" name="q1" value="b" id="q1b"> Permanent<br>
+                <input type="radio" name="q1" value="c" id="q1c"> Intermittent<br>
+                <input type="radio" name="q1" value="d" id="q1d"> Simple<br>
+          
+                <h3>2. Fault simulation detects faults by </h3>
+                <input type="radio" name="q2" value="a" id="q2a"> Test generation<br>
+                <input type="radio" name="q2" value="b" id="q2b"> Construction of fault dictionaries<br>
+                <input type="radio" name="q2" value="c" id="q2c"> Design analysis under faults<br>
+                <input type="radio" name="q2" value="d" id="q2d"> All of the above<br>
+          
+                <h3>3. Full subtractor is used to perform subtraction of </h3>
+                <input type="radio" name="q3" value="a" id="q3a"> 2 bits<br>
+                <input type="radio" name="q3" value="b" id="q3b"> 3 bits<br>
+                <input type="radio" name="q3" value="c" id="q3c"> 4 bits<br>
+                <input type="radio" name="q3" value="d" id="q3d"> 6 bits<br>
+          
+                <h3>4. If the input of a subtractor is A and B, then if A = B, then whats the output?</h3>
+                <input type="radio" name="q4" value="a" id="q4a"> 0<br>
+                <input type="radio" name="q4" value="b" id="q4b"> 1<br>
+                <input type="radio" name="q4" value="b" id="q4b"> A<br>
+                <input type="radio" name="q4" value="b" id="q4b"> B<br>
+          
+                <h3>5. The output of a subtractor is given by (if A, B and X are the inputs).</h3>
+                <input type="radio" name="q5" value="a" id="q5a"> A AND B XOR X<br>
+                <input type="radio" name="q5" value="b" id="q5b"> A XOR B XOR X<br>
+                <input type="radio" name="q5" value="c" id="q5c"> A OR B NOR X<br>
+                <input type="radio" name="q5" value="d" id="q5d"> A NOR B XOR X<br>
+                <br><br>
+                <input type="submit" value="Submit Answers">
+              </form>
+              <div id="results"></div>
+            </section>
+          </div>
+
+
       </div>
     </section>
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8450"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
-  </body>
+ 
+    
+</body>
 </html>
