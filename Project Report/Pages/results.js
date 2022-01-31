@@ -195,3 +195,7 @@ function addResult() {
                     `;
 	document.getElementById('insert-here').innerHTML += html;
 }
+
+function reset() {
+	$("#tgi tbody tr").remove();
+}
