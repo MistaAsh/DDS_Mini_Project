@@ -8,7 +8,11 @@ Test stuck at zero fault at different locations on the I/O wires of the logic ga
 ## Project Report
 Requirements to run website: Web browser (such as Google Chrome or Mozilla Firefox)
 
-## Members
+## Submitted To
+#### Dr. Biswajit R Bhowmik : Assistant Professor, Department of CSE
+
+## Submitted By
+### Members
 
 | Team Members (Alphabetical Order) |Roll No |
 | :------------: | :---------------:|  
@@ -17,3 +21,4 @@ Requirements to run website: Web browser (such as Google Chrome or Mozilla Firef
 | Rishika Carpenter|201CS248 |    
 | [Samyak Sanjay Sand](https://github.com/samyaksand) |201CS251 |   
 | Sana Azmiya | 201CS252 |    
+
