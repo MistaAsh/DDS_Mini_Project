@@ -11,21 +11,22 @@ formElement.onsubmit = function submitAnswers() {
 		q4 = document.forms['quizForm']['q4'].value,
 		q5 = document.forms['quizForm']['q5'].value;
 
-	// Validation
-	for (i = 1; i <= total; i++) {
-		if (eval('q' + i) === null || eval('q' + i) === '') {
-			alert('You missed question ' + i);
-			return false;
-		}
-	}
+	// // Validation
+	// for (i = 1; i <= total; i++) {
+	// 	if (eval('q' + i) === null || eval('q' + i) === '') {
+	// 		alert('You missed question ' + i);
+	// 		return false;
+	// 	}
+	// }
 
 	// Set Correct Answers
 	var answers = [ 'b', 'd', 'b', 'a', 'b' ];
 
-	// Check Answers
 	for (i = 1; i <= total; i++) {
 		if (eval('q' + i) === answers[i - 1]) {
 			score++;
+			var results = document.getElementById('results');
+			results.innerHTML = '<h3>You scored <span>' + score + '</span> out of <span>' + total + '</span></h3>';
 		}
 	}
 

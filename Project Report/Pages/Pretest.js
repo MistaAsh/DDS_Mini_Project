@@ -12,12 +12,12 @@ formElement.onsubmit = function submitAnswers() {
 		q5 = document.forms['quizForm']['q5'].value;
 
 	// Validation
-	for (i = 1; i <= total; i++) {
-		if (eval('q' + i) === null || eval('q' + i) === '') {
-			alert('You missed question ' + i);
-			return false;
-		}
-	}
+	// for (i = 1; i <= total; i++) {
+	// 	if (eval('q' + i) === null || eval('q' + i) === '') {
+	// 		alert('You missed question ' + i);
+	// 		return false;
+	// 	}
+	// }
 
 	// Set Correct Answers
 	var answers = [ 'c', 'b', 'a', 'a', 'b' ];
@@ -26,6 +26,8 @@ formElement.onsubmit = function submitAnswers() {
 	for (i = 1; i <= total; i++) {
 		if (eval('q' + i) === answers[i - 1]) {
 			score++;
+			var results = document.getElementById('results');
+			results.innerHTML = '<h3>You scored <span>' + score + '</span> out of <span>' + total + '</span></h3>';
 		}
 	}
 

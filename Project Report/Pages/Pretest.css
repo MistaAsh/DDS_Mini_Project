@@ -11,12 +11,11 @@ body {
 	margin: 20px auto;
 	overflow: auto;
 	padding: 2.6rem;
-	border: 2px solid #b2967d;
 }
 
 header {
 	text-align: center;
-	border-bottom: #e7d8c9 dashed 1px;
+
 }
 
 header h1 {
@@ -31,7 +30,7 @@ header p {
 }
 
 input[type="submit"] {
-	background: #b2967d;
+	background: #007007;
 	border: 0;
 	color: #fff;
 	padding: 10px 12px;
@@ -43,7 +42,7 @@ input[type="submit"] {
 }
 
 [id="results"] h3 {
-	background: #eee4e1;
+	background: #8286ff;
 	padding: 10px;
 	margin: 10px 0;
 	color: #000;
