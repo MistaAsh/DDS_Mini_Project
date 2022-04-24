@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Theory</title>
-    <link rel="stylesheet" href="../nicepage.css" media="screen">
+    <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Theory.css" media="screen">
-    <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="Pretest.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="../Aim.html" style="padding: 10px 20px;">Aim</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Aim</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Theory.html" style="padding: 10px 20px;">Theory</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Pretest.html" style="padding: 10px 20px;">Pretest</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Procedure.html" style="padding: 10px 20px;">Procedure</a>
@@ -55,7 +55,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Aim.html" style="padding: 10px 20px;">Aim</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 20px;">Aim</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Theory.html" style="padding: 10px 20px;">Theory</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pretest.html" style="padding: 10px 20px;">Pretest</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Procedure.html" style="padding: 10px 20px;">Procedure</a>
@@ -69,14 +69,25 @@
           </div>
         </nav>
       </div></header>
+      <section class="u-align-center u-clearfix u-section-1" id="sec-fe7e">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+          <h1 class="u-text u-text-default u-text-1">THEORY</h1>
+        </div>
+      </section>
       <section class="u-clearfix u-grey-5 u-section-1" id="sec-832a">
         <div class="u-clearfix u-sheet u-sheet-1">
-          <h3 class="u-text u-text-1"> Full Subtractor</h3>
-          <p class="u-text u-text-2"> A full subtractor is a combinational circuit that performs subtraction involving three bits, namely A (minuend), B (subtrahend), and Bin (borrow-in) . It accepts three inputs: A (minuend), B (subtrahend) and a Bin (borrow bit) and it produces two outputs: D (difference) and Bout (borrow out). The logic diagram and truth table for a full subtractor is given.<br>
-            <br>
+          <p class="u-text u-text-2"> A full subtractor is a combinational circuit that performs subtraction involving three bits, namely A (minuend), B (subtrahend), and Bin (borrow-in) as seen in Figure 1 below. It accepts three inputs: A (minuend), B (subtrahend) and a Bin (borrow bit) and it produces two outputs: D (difference) and Bout (borrow out). The logical expression for the same circuit is given as- <br>
+            <!-- <br> -->
             <br>D = A&nbsp;<b>⊕</b>&nbsp;B&nbsp;<b>⊕</b>&nbsp;Bin<br>Bout = A'B + A'Bin + BBin<br>
           </p>
-          <img class="u-image u-image-default u-image-1 main-image" src="../images/CircuitDiagram.PNG" alt="" data-image-width="480" data-image-height="300">
+          <!-- <div>
+            <img class="u-image u-image-default u-image-1 main-image" src="images/CircuitDiagram.PNG" alt="" data-image-width="480" data-image-height="300">
+            <p style="display:flex; flex-direction:row; justify-content:center;">Figure 1: Full-Subractor logical circuit</p>
+          </div> -->
+          <figure>
+            <img class="u-image u-image-default u-image-1 main-image" src="images/CircuitDiagram.PNG" alt="" data-image-width="480" data-image-height="300">
+            <figcaption style="text-align: center;"><i>Figure 1: Full-Subractor logical circuit</i></figcaption>
+          </figure>
         </div>
         
       </section>
@@ -168,14 +179,20 @@
       <section class="u-clearfix u-grey-5 u-section-3" id="sec-3046">
         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
           <h3 class="u-text u-text-1"> Stuck-at Faults</h3>
-          <p class="u-text u-text-2"> Stuck-at Fault is a Functional Fault on a Boolean (Logic) Function Implementation. It is not a Physical Defect Model, It is an abstract fault model.&nbsp; A logic stuck-at 0 means when a logic 1 is applied to the line, it produces a logical error, which means 1 becomes 0. Simultaneously if it is stuck-at 1, when a logic 0 is applied, it produces a logical error and becomes 1.</p>
+          <p class="u-text u-text-2"> Stuck-at Fault is a Functional Fault on a Boolean (Logic) Function Implementation. It is not a Physical Defect Model, It is an abstract fault model.&nbsp; A logic stuck-at 0 means when a logic 1 is applied to the line, it produces a logical error, which means 1 becomes 0. Simultaneously if it is stuck-at 1, when a logic 0 is applied, it produces a logical error and becomes 1.
+          <br><br>
+          Stuck at faults occur when a line is permanently stuck to V<sub>dd</sub> or ground giving a faulty output. This line may be an input or output to any gate. Also this fault can be single or multiple stuck at faults.
+          <br><br>
+          It is also called a permanent fault model because the faulty effect is assumed to be permanent, in contrast to intermittent faults which occur (seemingly) at random and transientfaults which occur sporadically, perhaps depending on operating conditions like temperature, power supply voltage or on the data values (high or low voltage states) on surrounding signal lines. The single stuck-at fault model is structural because it is defined based on a structural gate-level circuit model.
+          <br><br>
+          Sa0 faults are specifically caused when the line in question is connected to the ground. As a result of this, no matter the input to the line, it will only carry and output the 0 signal. </p>
         </div>
       </section>
       <section class="u-clearfix u-grey-5 u-section-4" id="sec-e29b">
         <div class="u-clearfix u-sheet u-sheet-1">
           <h3 class="u-text u-text-1"> Design Procedure</h3>
           <p class="u-text u-text-2"> A full subtractor circuit is designed using NOT, AND and XOR gates. Stuck at zero faults in various locations in the input and output wires can be observed. For different values of inputs, the values of outputs obtained for specific stuck-at 0 faults can be different from the expected, ideal output, using which we can identify the presence of the fault.</p>
-          <img class="u-image u-image-default u-image-1" src="../images/gates.jpg" alt="" data-image-width="480" data-image-height="300">
+          <img class="u-image u-image-default u-image-1" src="images/gates.jpg" alt="" data-image-width="480" data-image-height="300">
         </div>
       </section>
     

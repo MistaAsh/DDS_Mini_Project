@@ -156,18 +156,18 @@ function calcuate() {
 
 	if (_dout == '1') {
 		var dout = document.getElementById('dout');
-		dout.src = '../images/3522738.png';
+		dout.src = 'images/3522738.png';
 	} else {
 		var dout = document.getElementById('dout');
-		dout.src = '../images/3522725.png';
+		dout.src = 'images/3522725.png';
 	}
 
 	if (_bout == '1') {
 		var bout = document.getElementById('bout');
-		bout.src = '../images/3522738.png';
+		bout.src = 'images/3522738.png';
 	} else {
 		var bout = document.getElementById('bout');
-		bout.src = '../images/3522725.png';
+		bout.src = 'images/3522725.png';
 	}
 }
 
@@ -180,6 +180,15 @@ function yesno() {
 	return 'YES';
 }
 
+function yesnook() {
+	if ((_dout == a) ^ b ^ bin) {
+		if (((invert(a) & b) | (invert(a) & bin) | (b & bin)) == _bout) {
+			return 'lightgreen';
+		}
+	}
+	return 'red';
+}
+
 function addResult() {
 	let html = `
                      <tr>
@@ -190,7 +199,7 @@ function addResult() {
                         <td class="tg-nrix">${(invert(a) & b) | (invert(a) & bin) | (b & bin)}</td>
                         <td class="tg-nrix">${_dout}</td>
                         <td class="tg-nrix">${_bout}</td>
-                        <td class="tg-nrix">${yesno()}</td>
+                        <td class="tg-nrix" bgcolor="${yesnook()}">${yesno()}</td>
                     </tr>
                     `;
 	document.getElementById('insert-here').innerHTML += html;
