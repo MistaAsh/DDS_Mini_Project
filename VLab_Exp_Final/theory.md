@@ -1,47 +1,119 @@
-### INTRODUCTION<br>
-<p style="text-indent:50px; text-align:justify;">Aggregates undergo significant wear and tear throughout their life. Aggregates must be hard and tough enough to resist crushing, degradation and disintegration and be able to transmit loads from the pavement surface to the underlying layers and eventually the subgrade. Testing the strength of parent rock alone does not exactly indicate the strength of aggregates in concrete. For this reason assessment of strength of the aggregates are made by using a sample bulk aggregates in standardized manner.Several tests are thus performed to assess the stability and quality of roads. The Aggregate Impact Value Test is one such test. The impact test is a type of quality control test for highway pavements that is used to determine the suitability of aggregates for use in highway pavement construction. </p>
+### INTRODUCTION
 
-<p style="text-indent:50px; text-align:justify;">The principal mechanical property of aggregate required in any construction is
-</p>
-<ol style="text-indent:50px; text-align:justify;list-style-position: inside">
-<li>Satisfactory resistance to crushing under the roller during construction</li>
-<li>Adequate resistance to surface abrasion under traffic</li>
-</ol>
+<p style="text-indent:50px; text-align:justify;">A full subtractor is a combinational circuit that performs subtraction involving three bits, namely A (minuend), B (subtrahend), and Bin (borrow-in) as seen in Figure 1 below. It accepts three inputs: A (minuend), B (subtrahend) and a Bin (borrow bit) and it produces two outputs: D (difference) and Bout (borrow out). The logical expression for the same circuit is given as-
 
-<p style="text-indent:50px; text-align:justify;">Aggregates used in road construction should be strong enough to resist abrasion and crushing and also the impact load. If aggregates are weak, then the stability of pavement structure will be adversely affected. The toughness of aggregate is its ability to resist sudden load acting on it. The movement of vehicles on the road sometimes gives rise to impact loading which results in breaking of aggregates into smaller pieces. Therefore the aggregates should have sufficient toughness to resist their disintegration due to impact. This characteristic of aggregate is measured by impact value test.</p>
+D = A ⊕ B ⊕ Bin
+<br>Bout = A'B + A'Bin + BBin</p>
 
 <br>
 
 <center>
-  <img src="images/impacts.png">    
-
-  <p>Aggregate Impact Testing Machine</p>
+  <img src="images/CircuitDiagram.png">    
+  <p><i>Full-Subractor logical circuit</i></p>
 </center>
 
 <br>
 
 <center>
-  Source: (<a href="http://www.expertsmind.com/questions/impact-test-tests-on-stones-30118285.aspx">http://www.expertsmind.com/questions/impact-test-tests-on-stones-30118285.aspx</a>)
-</center><br>
-
-<p style="text-indent:50px; text-align:justify;">In this test sample of standard aggregates kept in a mould which is subjected to fifteen blows of metal hammer of weight 14 kgs falling from the height of 38cms. The quantity of finer materials resulting from pounding will indicate the toughness of the sample of aggregates. As per IS 283-1970 Aggregates Impact Value is defined as the ratio of weight of fines formed to weight of total sample taken and is expressed in percentage</p>
-
-<p style="text-indent:50px; text-align:justify;">Aggregates Impact Value gives relative measure of resistance of aggregates to sudden shock or impact, which in some aggregates differs from its resistance to slow compression load. Impact Value should not be less than 45% for aggregates used for concrete other than wearing surface and 30% for concrete used in wearing surface. Table below shows the classification of aggregate with respect to aggregate impact value and limits of aggregate impact value for different types of road construction suggested by Indian Road Congress.</p>
-
-<center>
-<p>Classification of aggregates based on Aggregate Impact Value</p>
-<img src="./images/table1.png" alt="Parts" width=400/>
+<table class="tg" style="table-layout: fixed; width: 367px">
+            <colgroup>
+            <col style="width: 53px">
+            <col style="width: 53px">
+            <col style="width: 52px">
+            <col style="width: 105px">
+            <col style="width: 104px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="tg-c3ow" colspan="3"><span style="font-weight:bold">Inputs</span></th>
+                <th class="tg-c3ow" colspan="2"><span style="font-weight:bold">Outputs</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-wp8o">A</td>
+                <td class="tg-wp8o">B</td>
+                <td class="tg-wp8o">Bin</td>
+                <td class="tg-wp8o">Bout(Borrow)</td>
+                <td class="tg-wp8o">D(Difference)</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+              </tr>
+              <tr>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">1</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+                <td class="tg-wp8o">0</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+              </tr>
+            </tbody>
+            </table>
 </center>
 
+<br>
+
+<p style="text-indent:50px; text-align:justify;">Stuck-at Fault is a Functional Fault on a Boolean (Logic) Function Implementation. It is not a Physical Defect Model, It is an abstract fault model.  A logic stuck-at 0 means when a logic 1 is applied to the line, it produces a logical error, which means 1 becomes 0. Simultaneously if it is stuck-at 1, when a logic 0 is applied, it produces a logical error and becomes 1.</p>
+
+<p style="text-indent:50px; text-align:justify;">Stuck at faults occur when a line is permanently stuck to Vdd or ground giving a faulty output. This line may be an input or output to any gate. Also this fault can be single or multiple stuck at faults.</p>
+
+<p style="text-indent:50px; text-align:justify;">It is also called a permanent fault model because the faulty effect is assumed to be permanent, in contrast to intermittent faults which occur (seemingly) at random and transientfaults which occur sporadically, perhaps depending on operating conditions like temperature, power supply voltage or on the data values (high or low voltage states) on surrounding signal lines. The single stuck-at fault model is structural because it is defined based on a structural gate-level circuit model.</p>
+
+<p style="text-indent:50px; text-align:justify;">Sa0 faults are specifically caused when the line in question is connected to the ground. As a result of this, no matter the input to the line, it will only carry and output the 0 signal.</p>
+
+<br>
+
+<p style="text-indent:50px; text-align:justify;">A full subtractor circuit is designed using NOT, AND and XOR gates. Stuck at zero faults in various locations in the input and output wires can be observed. For different values of inputs, the values of outputs obtained for specific stuck-at 0 faults can be different from the expected, ideal output, using which we can identify the presence of the fault.</p>
+
+<br>
 
 <center>
-<p></p>
-<p>Impact Value of Aggregate for different types of pavement</p>  
-<img src="./images/table2.png" alt="Parts" />
+  <img src="images/gates.jpg">    
+  <p><i>Types of logic gates</i></p>
 </center>
-
-<p style="text-indent:50px; text-align:justify;"><strong>Relevant Indian Standards</strong>:</p>  
-<ol style="text-indent:25px; text-align:justify;list-style-position: inside">
-<li>IS 2386 (Part IV) 1963: Methods of Test for Aggregates Mechanical Properties, Tenth Reprint MARCH 1997.</li>
-<li>IS 383-1970: Specification for Coarse and Fine Aggregates.</li>
-</ol>

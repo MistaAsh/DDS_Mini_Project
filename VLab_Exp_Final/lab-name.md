@@ -1,1 +1,1 @@
-Transportation Engineering Lab
+Digital Design and Systems Lab

@@ -1,32 +1,32 @@
 ## <b> Pre-test</b>
 #### Please attempt the following questions
 
-Q 1. Which of the following test measures the toughness of road aggregates?  
-<b>a) Impact test</b>  
-b) Abrasion test  
-c) Crushing test  
-d) Shape test  
+Q 1. Full Subtractor circuits have  
+a. 1 input, 1 output   
+b. 2 inputs, 3 outputs  
+<b>c. 3 inputs, 2 outputs</b>  
+d. None  
 
-Q 2. Set of sieves used in this experiment is?  
-a) 12.5mm, 20mm, 10mm  
-<b> b)12.5mm, 10mm, 2.36mm </b>  
-c) 10mm, 12mm, 12.5mm  
-d) 2.36mm, 4.75mm, 10mm  
+Q 2. The output of a full subtractor is same as the output of ____________  
+a. Half adder  
+<b>b. Full adders</b>  
+c. Half subtractor  
+d. Decoder  
 
-Q 3. What is diameter of cyclinder metal measure used in this experiment?  
-<b>a) 75mm</b>  
-b) 65mm  
-c) 45mm  
-d) 60mm  
+Q 3. _________________ can be used to implement the full subtractor.  
+<b>a. Two half subtractors and an OR   gate</b>  
+b. Two XOR and an OR gates  
+c. Two multiplexers and an AND gate  
+d. Two comparators and an AND gate  
 
-Q 4. Impact value of aggregate satisfactory for road surfacing is  
-a)  <10%  
-<b>b) 20-30% </b>  
-c) 30-40%  
-d) >50%  
+Q 4. How many NAND gates a full subtractors is implemented with?  
+<b>a. 9</b>  
+b. 8  
+c. 7  
+d. 6  
 
-Q 5. Aggregate impact value of less than 45% is suitable for  
-a) Bitumen Bound Macadam Base Course  
-<b>b) WBM Base Course</b>   
-c) Concrete Base Course
-d) None of the above  
+Q 5. When the input signal for a full subtractor is logic 0, it represents that the signal is _________?  
+a. High  
+<b>b. Low</b>  
+c. Toggle  
+d. Both Low and Toggle  

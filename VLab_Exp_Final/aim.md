@@ -1,1 +1,1 @@
-To evaluate the toughness of aggregates to break down under application of impact and to determine aggregate impact value of the given sample of aggregate. 
+To undestand the concept of the SA0 (Stuck-at 0) faults on logic circuit: Full-Subtractor. Use the Simulator and Truth Table to analyse the Stuck-at 0 faults and observe the changes in the output.
